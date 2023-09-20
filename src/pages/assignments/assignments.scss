@@ -1,0 +1,143 @@
+.assignments-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table-row {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+
+.table-cell {
+  flex: auto;
+  padding: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(33.33% - 10px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.table-cell-assignment {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  height: max-content;
+}
+.evaluator-list {
+  width: fit-content;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list-ıd {
+  margin: 5em;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.select-container {
+  margin-bottom: 15px;
+}
+
+.question-label {
+  margin-top: 15px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+p {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.assigned-questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.transfer-list-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
