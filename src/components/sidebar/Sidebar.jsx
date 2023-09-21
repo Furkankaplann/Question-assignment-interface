@@ -48,18 +48,6 @@ const Sidebar = (props) => {
             </li>
           </Link>
 
-          <p className="title">Çıkış</p>
-
-          <Link
-            onClick={props.handleLogout}
-            to="/"
-            style={{ textDecoration: "none" }}
-          >
-            <li>
-              <ExitToAppIcon className="icon" />
-              <span className="logout">Çıkış Yap</span>
-            </li>
-          </Link>
         </ul>
       </div>
     </div>
