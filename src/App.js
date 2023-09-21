@@ -1,32 +1,23 @@
 // App.js
 
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route, json } from "react-router-dom";
 import Home from "./pages/home/Home";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import Assignments from "./pages/assignments/Assignments";
-import { productInputs, userInputs } from "./formSource";
+import { userInputs } from "./formSource";
 import "./style/dark.scss";
-import { DarkModeContext } from "./context/darkModeContext";
 import { Grid } from "@mui/material";
 import Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
 
 function App() {
-  const { darkMode } = useContext(DarkModeContext);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    if (loggedInUser) {
-      setIsLoggedIn(true);
-    }
-  }, []);
 
   return (
-    <div className={darkMode ? "app dark" : "app"}>
+    <div>
       <BrowserRouter>
         <Grid container>
           <Grid item xs={2}>
@@ -50,12 +41,6 @@ function App() {
                 <Route path="products">
                   <Route index element={<List />} />
                   <Route path=":productId" element={<Single />} />
-                  <Route
-                    path="new"
-                    element={
-                      <New inputs={productInputs} title="Add New Product" />
-                    }
-                  />
                 </Route>
                 <Route path="Assignments" element={<Assignments />} />
               </Routes>
