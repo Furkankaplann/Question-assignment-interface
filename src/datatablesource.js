@@ -7,7 +7,7 @@ export const userColumns = [
     renderCell: (params) => {
       return (
         <div className="cellWithImg">
-          <img className="cellImg" src={params.row.img} alt="avatar"/>
+          <img className="cellImg" src={params.row.img} alt="avatar" />
           {params.row.username}
         </div>
       );
@@ -17,7 +17,6 @@ export const userColumns = [
     field: "status",
     headerName: "Durum",
     width: 350,
-  
 
     renderCell: (params) => {
       return (
@@ -35,7 +34,6 @@ export const userRows = [
     username: "Değerlendirici - 1",
     img: "https://www.okulistik.com/anasayfa/images/okulistik-logo.svg",
     status: "Master",
-   
   },
   {
     id: 2,
